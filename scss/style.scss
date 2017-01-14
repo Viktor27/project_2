@@ -1,0 +1,253 @@
+
+$primary-font:'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,800');
+@import "layout";
+@import "normalize";
+@import "slick";
+body{
+	font: 400 14px/1.6 $primary-font;
+
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	text-decoration: none;
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	max-width: 1970px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.ba-header {
+	.ba-logo{
+		padding-top: 20px;
+		display: inline-block;
+		color:  #000000;
+		font-size: 30px;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	&__menu {
+		padding-top: 30px;
+		padding-right: 150px;
+		margin: 0;
+		list-style: none;
+		li {
+			list-style: none;
+			font-size: 18px;
+			font-weight: 700;
+			float: left;
+			padding-left: 80px;
+
+		}
+		li a{
+			text-decoration: none;
+			color: #000000;
+		}
+		li a:hover {
+			padding-bottom: 10px;
+			border-bottom: 4px solid #f2f2f2;
+		}
+	}
+}
+
+.ba-slider {
+	outline: none;
+	&__slide {
+		position: relative;
+	}
+
+
+	&__title {
+		position: absolute;
+		left: 230px;
+		top: 150px;
+		font-size: 92px;
+		font-weight: 700;
+		line-height: 1.3;
+		border-bottom: 15px solid #96CFE9;
+	}
+	&__slide img {
+		float: right;
+
+	}
+	.slick-next {
+		background: url(../img/Rightarrow.png) 50% no-repeat;
+		position: relative;
+		bottom: 600px;
+		left: 100px;
+	}
+	.slick-prev {
+		background: url(../img/leftarrow.png) 50% no-repeat;
+		position: relative;
+		top: 250px;
+		left: 100px;
+
+	}
+
+}
+
+.some-info {
+
+	&__title1 {
+		color:  #bcc1cd;
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 1.7;
+	}
+	p {
+		color:  #9ca2b4;
+		font-size: 14px;
+		font-weight: 400;
+		line-height:3.4;
+	}
+	&__title2 {
+		font-family: Raleway;
+		color:  #000000;
+		font-size: 105px;
+		font-weight: 700;
+		background: url(../img/cool.jpg) 50%  no-repeat;
+	}
+}
+//
+
+.ba-how-we-work {
+
+	.ba-width-1-4 {
+		padding: 1px;
+	}
+	&__img{
+		position: relative;
+	}
+	&__text{
+		position: absolute;
+		width: 100%;
+		left: 30%;
+		top: 50%;
+		transform: translateY(-50%);
+		text-transform: uppercase;
+		color:  #ffffff;
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 2;
+	}
+
+}
+//steps
+.ba-steps {
+	padding: 40px 0;
+	&__title {
+		text-align: center;
+		color:  #97d1eb;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.ba-grid {
+		background:  url(../img/howwebg.png) 50%;
+		background-size: cover;
+		h3 {
+			font-size: 60px;
+			text-align: center;
+		}
+	}
+
+}
+.ba-slider2 {
+
+	&__slide2 h3 {
+
+		color:  #000000;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+	&__slide2 p {
+		font-family: Montserrat;
+		color:  #9ca2b4;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 3.4;
+	}
+	.ba-button {
+		font-family: Montserrat;
+		color:  #9ca2b4;
+		font-size: 14px;
+		font-weight: 400;
+		padding: 10px;
+		border: 3px solid #9ca2b4 ;
+	}
+	.ba-button:hover {
+		background-color: #96CFE9;
+		color: #000;
+	}
+}
+.ba-contact {
+	padding-top: 100px;
+	&__form{
+
+	}
+}
+.ba-footer {
+	background-color: #0f0f0f;
+	&__logo {
+		display: block;
+		text-align: center;
+		margin: auto;
+	}
+	 p {
+		margin: auto;
+		text-align: center;
+		color:  #5d5d5d;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.7;
+	}
+}
